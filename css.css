@@ -15,10 +15,10 @@ body {
     width: 100%;
     background: linear-gradient(
         285deg,
-        #1f1b1c,
-        #1f1b1c 50%,
-        #ca2020 50%,
-        #ca2020
+        #000000,
+        #000000 50%,
+        #1B2A41 50%,
+        #1B2A41
     );
     font-size: 0px;
     position: relative;
@@ -61,18 +61,18 @@ div.hline:after {
 }
 
 .bg-black {
-    background: #1f1b1c;
+    background: #0C1821;
     color: #e4e9e3;
 }
 
 .bg-red {
-    background: #ca2020;
+    background: #324A5F;
     color: #e4e9e3;
 }
 
 .bg-white {
     background: #e4e9e3;
-    color: #1f1b1c;
+    color: #0C1821;
 }
 
 .cross-two {
@@ -90,39 +90,56 @@ div.hline:after {
         285deg,
         #e4e9e3,
         #e4e9e3 50%,
-        #ca2020 50%,
-        #ca2020
+        #1B2A41 50%,
+        #1B2A41
     );
 }
+
+.last-red-white.active {
+    background: #1B2A41;
+}
+
 
 .last-black-red {
     background: linear-gradient(
         285deg,
-        #1f1b1c,
-        #1f1b1c 50%,
-        #ca2020 50%,
-        #ca2020
+        #000000,
+        #000000 50%,
+        #324A5F 50%,
+        #324A5F
     );
+}
+
+.last-black-red.active {
+    background: #324A5F;
 }
 
 .last-red-black {
     background: linear-gradient(
         285deg,
-        #ca2020,
-        #ca2020 50%,
-        #1f1b1c 50%,
-        #1f1b1c
+        #324A5F,
+        #324A5F 50%,
+        #000000 50%,
+        #000000
     );
+}
+
+.last-red-black.active {
+    background: #000000;
 }
 
 .last-white-red {
     background: linear-gradient(
         285deg,
-        #ca2020,
-        #ca2020 50%,
+        #324A5F,
+        #324A5F 50%,
         #e4e9e3 50%,
         #e4e9e3
     );
+}
+
+.last-white-red.active {
+    background: #e4e9e3;
 }
 .decode-text {
     width: 100%;
