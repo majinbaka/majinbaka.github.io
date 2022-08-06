@@ -5,46 +5,55 @@
         <link rel="stylesheet" href="css.css" />
     </head>
     <body>
-        <!-- <div class="hline"> -->
-        <div class="">
-            <div class="decode-text">
-                <div class="text-animation">H</div>
-                <div class="text-animation">e</div>
-                <div class="text-animation">l</div>
-                <div class="text-animation">l</div>
-                <div class="text-animation">o</div>
-                <div class="text-animation">!</div>
-                <div class="space"></div>
-                <div class="text-animation">I</div>
-                <div class="space"></div>
-                <div class="text-animation">a</div>
-                <div class="text-animation">m</div>
-                <div class="space"></div>
-                <div class="text-animation">M</div>
-                <div class="text-animation">i</div>
-                <div class="text-animation">c</div>
-                <div class="text-animation">h</div>
-                <div class="text-animation">a</div>
-                <div class="text-animation">l</div>
+        <div id="container">
+            <span>Hi</span>, <span>I am a</span>
+            <span class="glow">Fullstack Developer</span><br />
+            Nice to meet you ya.<br />
+            <span class="hide">
+                I am not a designer so it better to keep everything simple.
+                Hahahaha! </span
+            ><br />
+            <div>
+                <a href="https://www.linkedin.com/in/michal-plachy-71698b107/">
+                    Linkedin
+                </a>
             </div>
+            <span class="hide-1" style="display: none">
+                Why you still here? Fine here my github link ya
+                <a href="https://github.com/majinbaka"> github </a> </span
+            ><br />
         </div>
-        <div class="cross-two last-red-white css-transforms-demo el" id="F1993">
-            <div class="circle bg-white">1994</div>
-        </div>
-        <div class="cross-two last-white-red" id="F1994">
-            <div class="circle bg-red">1993</div>
-        </div>
-        <div class="cross-two last-black-red" id="F1995">
-            <div class="circle bg-black">1995</div>
-        </div>
-        <div class="cross-two last-red-black" id="F1996">
-            <div class="circle bg-red">1996</div>
-        </div>
-        <div class="cross-two last-black-red" id="F1997">
-            <div class="circle bg-black">1997</div>
-        </div>
-        <!-- </div> -->
-        <script src="jquery-3.6.0.min.js"></script>
-        <script src="js.js"></script>
+        <script>
+            setTimeout(myGreeting, 300000);
+            function myGreeting() {
+                var elems = document.getElementsByClassName('hide-1');
+                elems[0].style = 'display:initial';
+            }
+            document.onkeyup = (e) => {
+                if (e.ctrlKey && (e.keyCode == 65 || e.keyCode == 97)) {
+                    alert('Ops! You see it');
+                }
+            };
+            window.oncontextmenu = function () {
+                alert('Please dont do it');
+                showCustomMenu();
+                return false;
+            };
+            var isCtrl = false;
+            document.onkeyup = function (e) {
+                if (e.keyCode == 17) isCtrl = false;
+            };
+
+            document.onkeydown = function (e) {
+                if (e.keyCode == 17) isCtrl = true;
+                if (e.keyCode == 83 && isCtrl == true) {
+                    alert('Please dont');
+                    alert('Please');
+                    alert('Oh no');
+                    alert('Nooooo');
+                    return false;
+                }
+            };
+        </script>
     </body>
 </html>

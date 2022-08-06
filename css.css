@@ -1,4 +1,5 @@
 /** @format */
+
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 * {
@@ -13,173 +14,78 @@
 
 body {
     width: 100%;
-    background: linear-gradient(
-        285deg,
-        #000000,
-        #000000 50%,
-        #1B2A41 50%,
-        #1B2A41
-    );
-    font-size: 0px;
+    background: #1b2a41;
     position: relative;
     font-family: 'roboto', sans-serif;
-    overflow-y: hidden;
+    overflow: hidden;
     text-align: center;
 }
 div {
     font-family: 'Share Tech Mono', monospace;
 }
 
-/* div.hline {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-}
-div.hline:before,
-div.hline:after {
-    content: '';
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
-}
-div.hline:before {
-    margin-right: 10px;
-}
-div.hline:after {
-    margin-left: 10px;
-} */
-
-.circle {
-    margin-top: 48vh;
-    margin-left: 45px;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    border-radius: 50%;
-    font-size: 13px;
-    text-align: center;
-}
-
-.bg-black {
-    background: #0C1821;
-    color: #e4e9e3;
-}
-
-.bg-red {
-    background: #324A5F;
-    color: #e4e9e3;
-}
-
-.bg-white {
-    background: #e4e9e3;
-    color: #0C1821;
-}
-
-.cross-two {
-    height: 100%;
-    width: 200px;
-    display: inline-block;
-    padding: 0 5em 0 0;
-}
-.cross-two:hover {
-    cursor: pointer;
-    width: 270px;
-}
-.last-red-white {
-    background: linear-gradient(
-        285deg,
-        #e4e9e3,
-        #e4e9e3 50%,
-        #1B2A41 50%,
-        #1B2A41
-    );
-}
-
-.last-red-white.active {
-    background: #1B2A41;
-}
-
-
-.last-black-red {
-    background: linear-gradient(
-        285deg,
-        #000000,
-        #000000 50%,
-        #324A5F 50%,
-        #324A5F
-    );
-}
-
-.last-black-red.active {
-    background: #324A5F;
-}
-
-.last-red-black {
-    background: linear-gradient(
-        285deg,
-        #324A5F,
-        #324A5F 50%,
-        #000000 50%,
-        #000000
-    );
-}
-
-.last-red-black.active {
-    background: #000000;
-}
-
-.last-white-red {
-    background: linear-gradient(
-        285deg,
-        #324A5F,
-        #324A5F 50%,
-        #e4e9e3 50%,
-        #e4e9e3
-    );
-}
-
-.last-white-red.active {
-    background: #e4e9e3;
-}
-.decode-text {
-    width: 100%;
+span.glow {
+    color: #c08552;
     font-size: 30px;
-    text-align: center;
+    font-weight: bolder;
 }
 
-.space {
-    display: inline-block;
-    width: 10px;
+span.hide {
+    color: #1b2a41;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.text-animation {
-    display: inline-block;
-    position: relative;
-    color: transparent;
-    text-transform: uppercase;
+a {
+    color: #ccc9dc;
 }
-.text-animation:before {
-    content: '';
-    color: #e4e9e3;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: #e4e9e3;
-    width: 0;
-    height: 1.2em;
-    -webkit-transform: translate(-50%, -55%);
-    -ms-transform: translate(-50%, -55%);
-    transform: translate(-50%, -55%);
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 500px;
+        margin: auto;
+        margin-top: 10px;
+        color: #ccc9dc;
+    }
 }
-.text-animation.state-1:before {
-    width: 1px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 600px;
+        margin: auto;
+        margin-top: 300px;
+        color: #ccc9dc;
+    }
 }
-.text-animation.state-2:before {
-    width: 0.9em;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #container {
+        width: 768px;
+        margin: auto;
+        margin-top: 380px;
+        color: #ccc9dc;
+    }
 }
-.text-animation.state-3 {
-    color: #e4e9e3;
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #container {
+        width: 992px;
+        margin: auto;
+        margin-top: 470px;
+        color: #ccc9dc;
+    }
 }
-.text-animation.state-3:before {
-    width: 0;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #container {
+        width: 1024px;
+        margin: auto;
+        margin-top: 500px;
+        color: #ccc9dc;
+    }
 }
