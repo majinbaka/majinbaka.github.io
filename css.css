@@ -43,7 +43,7 @@ a {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #container {
-        width: 500px;
+        width: 300px;
         margin: auto;
         margin-top: 10px;
         color: #ccc9dc;
